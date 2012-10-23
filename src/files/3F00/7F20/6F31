@@ -1,0 +1,8 @@
+;------------------------------------------------------------ 
+; [*] '6F31' - EF HPLMN (HPLMN Search Period)
+;------------------------------------------------------------ 
+	data	0x00, 0x01			; size
+	data	FSTATUS_NOT_INV | FSTRUC_TRANS	; status + structure
+	data	0x1F, 0xFF, 0xFF		; access conditions
+
+	data	0xFF

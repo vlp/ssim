@@ -1,0 +1,13 @@
+;------------------------------------------------------------ 
+; [X] '6F39' - EF ACM (Accumulated Call Meter)
+;------------------------------------------------------------ 
+
+	data	0x00, 0x09			; size
+	data	FSTATUS_NOT_INV | FSTRUC_CYC | FLOC_EEPROM | FCAN_INCREASE
+	data	0x11, 0x1F, 0x22		; access conditions
+	data	0x03				; number of records
+	data	0x01				; record pointer
+	data	0x03				; length of record
+	data	0x0BB9				; address in eeprom
+
+	; DATA IN EXTERNAL EEPROM

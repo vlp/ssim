@@ -1,0 +1,8 @@
+;------------------------------------------------------------ 
+; [*] '4F30' - EF TEST
+;------------------------------------------------------------ 
+	data	0x00, 0x01			; size
+	data	FSTATUS_NOT_INV | FSTRUC_TRANS	; status + structure
+	data	0x0F, 0xFF, 0xFF		; access conditions
+
+	data	0xAB

@@ -1,0 +1,8 @@
+;------------------------------------------------------------ 
+; [*] '6F07' - EF IMSI (IMSI)
+;------------------------------------------------------------ 
+	data	0x00, 0x09			; size
+	data	FSTATUS_NOT_INV | FSTRUC_TRANS	; status + structure
+	data	0x1F, 0xFF, 0x1F		; access conditions
+
+	data	CONFIG_IMSI

@@ -1,0 +1,8 @@
+;------------------------------------------------------------ 
+; [*] '2FE2' - EF ICCID (ICC identification)
+;------------------------------------------------------------ 
+	data	0x00, 0x0A			; size
+	data	FSTATUS_NOT_INV | FSTRUC_TRANS	; status + structure
+	data	0x0F, 0xFF, 0xFF		; access conditions
+
+	data	CONFIG_ICCID

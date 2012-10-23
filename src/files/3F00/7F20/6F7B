@@ -1,0 +1,9 @@
+;------------------------------------------------------------ 
+; [*] '6F7B' - EF FPLMN (Forbidden PLMNs)
+;------------------------------------------------------------ 
+	data	0x00, 0x0C			; size
+	data	FSTATUS_NOT_INV | FSTRUC_TRANS	; status + structure
+	data	0x11, 0xFF, 0xFF		; access conditions
+
+	data	0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF
+	data	0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF

@@ -1,0 +1,8 @@
+;------------------------------------------------------------ 
+; [*] '6F78' - EF ACC (Access Control Class)
+;------------------------------------------------------------ 
+	data	0x00, 0x02			; size
+	data	FSTATUS_NOT_INV | FSTRUC_TRANS	; status + structure
+	data	0x1F, 0xFF, 0xFF		; access conditions
+
+	data	0x00, 0x80

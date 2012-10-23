@@ -1,0 +1,12 @@
+;------------------------------------------------------------ 
+; [X] '6F3C' - EF SMS (Short messages)
+;------------------------------------------------------------ 
+
+	data	0x58, 0x00			; size
+	data	FSTATUS_NOT_INV | FLOC_EEPROM | FSTRUC_LIN	; status + structure
+	data	0x11, 0xFF, 0xFF		; access conditions
+	data	0x80				; number of records
+	data	0xB0				; length of record
+	data	0x2800			; address in eeprom
+
+	; DATA IN EXTERNAL EEPROM

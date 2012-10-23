@@ -1,0 +1,8 @@
+;------------------------------------------------------------ 
+; [*] '6F20' - EF Kc (Ciphering Key Kc)
+;------------------------------------------------------------ 
+	data	0x00, 0x09			; size
+	data	FSTATUS_NOT_INV | FSTRUC_TRANS	; status + structure
+	data	0x11, 0xFF, 0xFF		; access conditions
+
+	data	0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0x07

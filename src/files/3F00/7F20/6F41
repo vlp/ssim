@@ -1,0 +1,9 @@
+;------------------------------------------------------------ 
+; [X] '6F41' - EF PUCT (Price per Unit and Currency Table)
+;------------------------------------------------------------ 
+	data	0x00, 0x05			; size
+	data	FSTATUS_NOT_INV | FSTRUC_TRANS | FLOC_EEPROM
+	data	0x12, 0xFF, 0xFF		; access conditions
+	data	0x0B90				; address in eeprom
+
+	; DATA IN EXTERNAL EEPROM
