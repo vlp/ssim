@@ -1,0 +1,14 @@
+************************************************************
+ SSIM TODO
+************************************************************
+
+ - check TP enter - join with command support subroutine
+ - use full 14 bits in files/texts
+ - Incoming data check (TLV_ITEMID in LANGUAGE SELECTION and similar ones)
+ - Test MO SM Control :(
+ - support eurotel credit SMS
+ - import another providers sim toolkit (sms related functions)
+ - add motorola clone card features
+ - security based on phone imei
+ - sms compression and encryption
+ 

@@ -1,0 +1,11 @@
+;------------------------------------------------------------ 
+; [X] '6F3A' - EF ADN (Abbreviated Dialing Numbers)
+;------------------------------------------------------------ 
+	data	0x1B, 0xE4			; size
+	data	FSTATUS_NOT_INV | FLOC_EEPROM | FSTRUC_LIN	; status + structure
+	data	0x11, 0x00, 0x22		; access conditions
+	data	0xFF				; number of records
+	data	0x1C				; length of record
+	data	0x0C1B				; address in eeprom
+
+	; DATA IN EXTERNAL EEPROM

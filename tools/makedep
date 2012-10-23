@@ -1,0 +1,18 @@
+#!/bin/bash
+
+processfile () {
+cat $1 | grep -i "#include" | awk -F "\"" '{ print ( $2 ) }' | (
+while read subfile; do
+echo -e "\t\t\t"$subfile "\\"
+processfile $subfile
+done )
+}
+
+
+echo "# s_sim.asm dependencies"
+echo "s_sim.hex: src/s_sim.asm \\"
+
+processfile ./src/s_sim.asm
+
+echo -e "\t\t\tMakefile"
+echo -e "\t\tgpasm -a inhx16 -o s_sim.hex src/s_sim.asm"

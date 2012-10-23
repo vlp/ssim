@@ -1,0 +1,16 @@
+;------------------------------------------------------------ 
+; [X] '6F3C' - EF SMS (Short messages)
+;------------------------------------------------------------ 
+; 176
+SMS_COUNT	equ	0x0A
+SMS_ADDRESS	equ	0x2800
+SMS_LOCATION	equ	B'01000000'
+
+	data	0x06, 0xE0			; size
+	data	FSTATUS_NOT_INV | FLOC_EEPROM | FSTRUC_LIN	; status + structure
+	data	0x11, 0x00, 0xFF		; access conditions
+	data	SMS_COUNT			; number of records
+	data	0xB0				; length of record
+	data	SMS_ADDRESS			; address in eeprom
+
+	; DATA IN EXTERNAL EEPROM

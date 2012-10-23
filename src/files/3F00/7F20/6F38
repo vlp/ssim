@@ -1,0 +1,17 @@
+;------------------------------------------------------------ 
+; [*] '6F38' - EF SST (Sim Service Table)
+;------------------------------------------------------------ 
+	data	0x00, 0x0A			; size
+	data	FSTATUS_NOT_INV | FSTRUC_TRANS	; status + structure
+	data	0x1F, 0x00, 0xFF		; access conditions
+
+	data	B'11001111'	; SMS Storage:FDN:ADN:CHV1 disable
+	data	B'00111111'	; RFU:PLMN selector:CCP:Advice of Charge	(FULL)
+	data	B'11000011'	; SMS Params:Ext2:Ext1:MSISDN
+	data	B'00000011'	; GIL2:GIL1:CBMI:LND
+	data	B'00000011'	; RFU:Ext3:SDN:Service provider name
+	data	B'00000000'	; 
+	data	B'11110000'	; Call control:Menu:SMS-PP:SMS-CB
+	data	B'00000011'	; Ext4:BDN:CBM Id Ran:Proactive SIM
+	data	B'00000000'	; 
+	data	B'00110011'	; SoLSA:IMG:GPRS:Mob origin SMS control by SIM

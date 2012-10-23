@@ -1,0 +1,9 @@
+;------------------------------------------------------------ 
+; [X] '6F37' - EF ACMmax (ACM Maximum Value)
+;------------------------------------------------------------ 
+	data	0x00, 0x03			; size
+	data	FSTATUS_NOT_INV | FLOC_EEPROM | FSTRUC_TRANS | FMOR_YES
+	data	0x12, 0x00, 0xFF		; access conditions
+	data	0x0C02				; address in eeprom
+
+	; DATA IN EXTERNAL EEPROM

@@ -1,0 +1,30 @@
+;------------------------------------------------------------ 
+; [X] '6F8A' - EF AMP (Auto Morph Patterns)
+;------------------------------------------------------------ 
+	data	0x00, 0xF0			; size
+	data	FSTATUS_NOT_INV | FSTRUC_LIN	; status + structure
+	data	0x11, 0x00, 0xFF		; access conditions
+	data	CONFIG_AMP_COUNT		; number of records
+	data	0x0C				; length of record
+
+ST_AMP_DATA
+	data	CONFIG_AMP_01
+	data	CONFIG_AMP_02
+	data	CONFIG_AMP_03
+	data	CONFIG_AMP_04
+	data	CONFIG_AMP_05
+	data	CONFIG_AMP_06
+	data	CONFIG_AMP_07
+	data	CONFIG_AMP_08
+	data	CONFIG_AMP_09
+	data	CONFIG_AMP_10
+	data	CONFIG_AMP_11
+	data	CONFIG_AMP_12
+	data	CONFIG_AMP_13
+	data	CONFIG_AMP_14
+	data	CONFIG_AMP_15
+	data	CONFIG_AMP_16
+	data	CONFIG_AMP_17
+	data	CONFIG_AMP_18
+	data	CONFIG_AMP_19
+	data	CONFIG_AMP_20

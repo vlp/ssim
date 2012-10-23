@@ -1,0 +1,9 @@
+;------------------------------------------------------------ 
+; [*] '4F89' - EF VERSION (SSIM Version)
+;------------------------------------------------------------ 
+	data	0x00, (EF_S_6F89_END-EF_S_6F89_START)	; size
+	data	FSTATUS_NOT_INV | FSTRUC_TRANS	; status + structure
+	data	0x1F, 0x00, 0xFF		; access conditions
+EF_S_6F89_START
+	dt	Version
+EF_S_6F89_END

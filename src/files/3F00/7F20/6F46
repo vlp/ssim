@@ -1,0 +1,10 @@
+;------------------------------------------------------------ 
+; [X] '6F46' - EF SPN (Service Provider Name)
+;------------------------------------------------------------ 
+	data	0x00, 0x11			; size
+	data	FSTATUS_NOT_INV | FSTRUC_TRANS	; status + structure
+	data	0x0F, 0x00, 0xFF		; access conditions
+
+	data	B'00000001'
+	data	A'=', A'S', A'S', A'I', A'M', A'=', 0xFF, 0xFF
+	data	0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF

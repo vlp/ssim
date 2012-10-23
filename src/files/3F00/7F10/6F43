@@ -1,0 +1,8 @@
+;------------------------------------------------------------ 
+; [X] '6F43' - EF SMSS (SMS Status)
+;------------------------------------------------------------ 
+	data	0x00, 0x02			; size
+	data	FSTATUS_NOT_INV | FSTRUC_TRANS	; status + structure
+	data	0x11, 0x00, 0xFF		; access conditions
+
+	data	0xFF, 0xFF

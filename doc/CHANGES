@@ -1,0 +1,150 @@
+************************************************************
+ SSIM CHANGELOG
+************************************************************
+
+ v0.01		-	Internal EEPROM read/write
+ v0.02		-	SIM <-> ME communication subroutines
+ v0.1		-	A3A8 implemented
+ v0.11		-	A3A8 double TABLE 0 overflow bugfix
+ v0.2		-	"RUN GSM ALGORITHM" implemented
+		-	"GET RESPONSE" implemented
+		-	"SLEEP" command implemented
+ v0.3		-	Flash read/write
+		-	"VERIFY CHV" implemented
+		-	"ENABLE CHV" implemented
+		-	"DISABLE CHV" implemented
+		-	"CHANGE CHV" implemented
+		-	"UNBLOCK CHV" implemented
+ v0.4		-	CHANGE CHV offset bugfix
+		-	Basic file structure implemented [*]
+		-	Answer to Reset
+		-	I_SENDCHAR bugfix
+		-	First 'IN PHONE' version
+		-	A3A8 moved to PAGE 2
+		-	"READ BINARY" implemented
+ v0.5		-	"UPDATE BINARY" implemented
+		-	File structure grow [X]
+		-	Access conditions implemented
+		-	"READ RECORD" implemented
+		-	"UPDATE RECORD" implemented
+		-	Transparent file structure simplified
+		-	STATUS implemented
+		-	CHANGE CHV offset bugfix
+ v0.6		-	"INVALIDATE" implemented
+		-	"REHABILITATE" implemented
+		-	First 'ON NETWORK' version
+		-	Fixed linear file structure simplified
+		-	Uninitialized linear fixed record pointer implemented
+		-	Cyclic file absolut addressing corrected
+		-	"INCREASE" implemented
+		-	"SEEK" implemented
+ v0.7		-	Basic IIC EEPROM functions (copy)
+		-	EEPROM files implemented (198 ADN + 15 SMS)
+ v0.8		-	call ADDRESS_CURRENT_EF optimized in EF response
+		-	Number of CHV's changed to 0x04
+		-	SMART_FILE_CHECK routine
+		-	INCREASE response data bugfix
+		-	call ADDRESS_CURRENT_EF optimized in RUB
+		-	SMART_FILE_CHECK support for all commands
+		-	RUB register destination bugfix
+		-	Optimized INS, P1, P2, P3 read
+		-	WRITE_INT_EE bank bugfix
+		-	CHV R_TMP_FLAGS bit bugfix
+		-	RUN GSM ALGORITHM access and location bugfix
+		-	ENABLE/DISABLE CHV File characteristic byte bugfix
+ v0.9		-	First 'SIM MORPH' version
+		-	Experimental clock stop allowed
+		-	Type 2 SEEK response data bugfix
+		-	INCREASE response data bugfix
+		-	Morphing of EF's implemented
+		-	SIM patch subroutine
+ v1.0		-	Considered stable GSM 11.11 version
+ v1.1		-	"TERMINAL PROFILE" implemented
+		-	"FETCH" implemented
+		-	Code protection
+		-	"SET-UP MENU" proactive command implemented
+		-	"Command details" TLV implemented
+		-	"Device identities" TLV implemented
+		-	"Alpha identifier" TLV implemented
+		-	"Item" TLV implemented
+		-	Language tables implemented
+		-	English language table
+		-	Czech language table
+ v1.2		-	"TERMINAL RESPONSE" implemented
+		-	"ENVELOPE" implemented
+		-	GET_TAGS subroutine
+		-	Fundamental architecture
+		-	"DISPLAY TEXT" proactive command implemented
+		-	"Text string" TLV implemented
+		-	DF GRAPHICS & EF IMG added
+		-	"Icon identifier" TLV implemented
+		-	"REFRESH" proactive command implemented
+		-	"File List" TLV implemented
+ 		-	Ki(s) moved to internal EEPROM
+		-	First 'MENU MORPH' version
+ 		-	Basic SAT errors handling
+ v1.3		-	Multiple terminal response send handling
+		-	Backward move into MAIN_MENU now works (TRUE)
+ 		-	R_CMD_ACTION clean vs. R_CMD_DETAILS
+		-	Strid 0 length table patch no longer needed
+		-	Active language FLASH byte
+		-	ST_MENU_MOVE change R_TLV_ITEMID fix
+		-	Fixed SEND_ACK no return bug
+		-	Language selection
+		-	goto ; return stack optimi(li)zations
+		-	Full Change identity (choices)
+		-	Compressed select header
+ v1.4		-	Call Control activated in EF SST
+		-	REFRESH additional options
+		-	DF SSIM added
+		-	EF VERSION under DF SSIM added
+		-	EF AMP under DF SSIM added
+		-	EF AMP basic patterns
+		-	Settings::AutoMorph
+		-	First 'AUTO MORPH' version
+ v1.5		-	REFRESH STd filelist added
+		-	MACT_JMP header memory optimized
+		-	Advanced_function compiletime option
+		-	Wishful sinful INCREASE R_ACMD_RECP bugfix
+		-	SSIM development goes linux !!
+		-	External EEPROM memory organization
+		-	Some minor code fixes
+		-	SAT buffer access routines
+		-	No address send condition allowed in CC
+		-	MO Short Message Control activated in EF SST
+		-	MO Short Message functions (menu,envelope,..) - untested
+ v1.6		-	Advanced Functions::Terminal Profile
+		-	"POOLING OFF" proactive command implemented
+		-	Command processing failure error code
+		-	Set up call alpha identifiers
+		-	Language tables put into language.inc
+		-	EF PUCT moved into ext. EEPROM
+		-	Language tables format simplyfied
+		-	Menu put into menu.inc
+		-	Removed Advanced functions (put into Functions)
+		-	Historic APPLY_PATCH function removed
+		-	Functions::Undelete SMS
+		-	ST_DEC_2_HEX converting subroutine
+		-	Functions::Discharge battery
+ v1.7		-	Discharge battery cancel opportunity
+		-	Toolkit initialization check for CC and MO SMS
+		-	Auto Morph Call control simplified
+		-	Call Control Commands allowing voice control
+		-	"MORPH" CC Command
+		-	Fixed support for more than two accounts in language.inc
+		-	Fixed EF/DF labels in files.inc
+		-	Fixed numeration of account names in config.inc
+		-	Split into separate files
+		-	Some efforts for documentation
+		-	Project account on sourceforge.net
+		-	First 'GPL' version
+		-	Source tree structure
+		-	Makefile
+		-	Stupid dependencies script - tools/makedep
+		-	Elementary files structure
+		-	Stupid file script - tools/genfiles
+		-	DF GRAPHICS wrong position bugfix
+		-	New I_SENDCHAR, I_GETCHAR (strict ISO/IEC 7816)
+		-	File characteristics bit for 3V operation (GSM 11.12)
+		-	Some ACK Magic - now always use comf R_INS in commands
+		-	Changed icon qualifier to 0x01 (not self-explanatory)

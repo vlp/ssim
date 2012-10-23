@@ -1,0 +1,26 @@
+
+Simple SSIM compilation guide
+
+(*) STEP 1: Prepare
+
+make depend
+
+(*) STEP 2: Configure
+
+Requied values in config.inc:
+CONFIG_NO_SIM_PRESENT - number of sim accounts you want to use (max 8)
+For each account fill in the following
+    SIM_XX_NAME - name of account(must be at least one character long)
+    CONFIG_IMSI_XX - imsi for account
+    CONFIG_KI_XX - ki code for account
+    CONFIG_ACC_XX - access control class (if unsure, let the default value)
+    CONFIG_SMSP_XX - SMS service parameters (predefined for some networks)
+AMP Patterns - see doc/auto_morph
+
+(*) STEP 3: Compile
+
+make
+
+this should build s_sim.hex file - use picprog to fill the wafer card
+
+files residing in external eeprom need to be formatted

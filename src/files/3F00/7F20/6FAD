@@ -1,0 +1,8 @@
+;------------------------------------------------------------ 
+; [*] '6FAD' - EF AD (Administrative Data)
+;------------------------------------------------------------ 
+	data	0x00, 0x03			; size
+	data	FSTATUS_NOT_INV | FSTRUC_TRANS	; status + structure
+	data	0x0F, 0x00, 0xFF		; access conditions
+
+	data	0x81, 0xFF, 0xFF

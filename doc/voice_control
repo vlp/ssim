@@ -1,0 +1,23 @@
+
+Call Morph Commands Description
+
+SSIM has an opportunity to perform actions via so called 'Call Morph Commands'
+They are included in Auto Morph Patterns and start with +88 (0x91 0x88)
+Their format is following
+
+    +88XXYY
+
+	+88 .. standart prefix
+	XX .. command number
+	YY .. command params
+
+These commands are designed to be used with voice controlled phones.
+
+There is currently only one command with following syntax
+
++88010X - it changes active account into X
+
+X is the account id (account number minus 1) and ranges from 0(first account)
+to 7(last account)
+
+Usage: Learn your phone to dial +880101 when you say 'Magic' and it will do so :)
